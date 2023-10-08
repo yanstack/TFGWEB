@@ -1,0 +1,29 @@
+crear y usar base de datos
+create database vacantesoym;
+use vacantesoym
+
+
+
+crear tabla usuarios
+create table usuarios(
+id int auto_increment primary key,
+nombre varchar(100) not null,
+apellido varchar(150) not null,
+correo varchar(150) not null,
+matricula varchar(15) not null
+);
+
+
+crear tabal vacantes
+create table vacantes(
+id int auto_increment primary key,
+institucion varchar(100) not null,
+carrera varchar(150) not null,
+descripcion varchar(500) not null,
+salario varchar(30) default'discutir en la entrevista',  
+contacto varchar(100) not null
+);
+
+
+agregar campo fechapublicacion a la tabla vacantes
+alter table vacantes add column fechapublicacion timestamp default current_timestamp;

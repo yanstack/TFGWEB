@@ -1,0 +1,17 @@
+
+filtro de vacantes para los graduados.
+administracion y login de las vacantes para las empresas, se debe crear una tabla para uduarios de empresa que este relacionada con la tabla vacantes para que esas vacantes la empresa que las administre solo puede tocar esas vacantes que le pertenezcan.
+
+creo la cuenta de empresa con los datos: nombre empresa(formateado), contraseña,
+login con los datos anteriores.
+
+cuando una empresa busque, inserte, actualize o elimine, en la tabla vacantes se debe insertar el nombreempresa con el quense registro e inicia seccion.
+
+CREAR BOTON boton opciones donde habra un boton  ELIMINAR CUENTA que lanzara un diagolo aceptando o no, un boton editar cuenta usuario LO QUE PUDE LLEVARA CREAR OTRA PAGINA EXTRA EN LÑA WEB
+
+como las empresas pagaran un incentivo muy pequeño se realizara un excel como las empresasque subieron vacantes en el mes para solo cobrarles ese mes, por lo que un campo fecha en la tabal vacantes seria buena opcion.
+
+la tabla empresa debe tener un campo correo obligatorio para que el susuario que acepte la vacante sea el mismo que se registro y que tiene titulo universitario.
+
+[11:40 a. m., 30/9/2023] Mi Brother: Encuesta de cantida de proporción  de graduados trabajando en las empresas y de que universidad vienen.
+[11:59 a. m., 30/9/2023] Mi Brother: Patente no dejes que la universidad se adueñe de tu proyecto

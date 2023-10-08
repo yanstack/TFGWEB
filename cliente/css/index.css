@@ -1,0 +1,118 @@
+/* Estilo global */
+
+*{
+    margin: 0;
+    padding: 0;
+   box-sizing: border-box;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #F7F7F7;
+}
+.header {
+  background-color: #0C3C60;
+  width: 100%;
+  height: 30vh;
+display: flex;
+align-items: center;
+justify-content: space-around;
+flex-wrap: wrap;
+
+}
+  .header img {
+    width:100px;
+    height: 100px;
+    }
+.header h1{
+    font-size: 1.8vmax;
+    color: #fff;
+    text-decoration: underline;
+}
+  
+  p {
+    color: black;
+    font-size: 2vmax;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+.cuerpo{
+    border: 1px solid #C7C7C7;
+    width: 90%;
+    height: 40vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+
+  }
+  /* Estilo específico para enlaces de inicio de sesión */
+ .cuerpo a {
+    background-color: #0C3C60 ;
+    color: #fff;
+  }
+  a{
+    padding:10px 20px;
+    border-radius:5px;
+    font-size: 1.8vmax;
+    text-decoration: none;
+  }
+  li{
+    list-style: none;
+  }
+
+
+  .footer{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .footer-container{
+    background-color: #0C3C60;
+    width: 100%; 
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-container p{
+    color:#F7F7F7;
+  }
+.footer-nav{
+    width: 100%;
+    height: 200px;
+    background-color:#DAE9F2 ;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer-nav li{
+  border: 1px solid #0C3C60;
+  padding: 5px;
+  margin-right: 5px;
+  display: flex;
+  place-items: center;
+}.footer-nav li:first-child{
+  margin-top: 5px;
+}
+.footer-nav li a{
+    background-color: transparent; 
+    color: #0C3C60;
+}
+
+  @media screen and (max-width: 455px) {
+   
+  .cuerpo{
+    flex-direction: column ;
+    justify-content:center;
+    gap: 30px;
+  }
+  .footer-nav{
+flex-wrap: wrap;
+  }
+  }

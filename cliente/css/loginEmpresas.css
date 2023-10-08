@@ -1,0 +1,234 @@
+/* Estilo global */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #F7F7F7;
+    
+}
+
+/* Estilo del encabezado */
+.header {
+    background-color: #0C3C60;
+    width: 100%;
+    height: 30vh;
+display: flex;
+align-items: center;
+justify-content: space-around;
+flex-wrap: wrap;
+
+}
+.home{
+background-color: #fff;
+width: 40px;
+height: 40px;
+clip-path: polygon(50% 0%, 100% 38%, 100% 100%,70% 100%,70% 60%,30% 60%,30% 100%, 0 100%, 0% 38%);
+margin-left: 20px;
+}
+
+.header img {
+    width:100px;
+    height: 100px;
+    }
+.header h1{
+    font-size: 1.8vmax;
+    color: #fff;
+    text-decoration: underline;
+}
+
+h2{
+    margin-top: 10px;
+    font-size: 3vmax;
+    text-align: center;
+    
+}
+/* Estilo del contenedor de inicio de sesión */
+.login-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+
+/* Estilo del formulario de inicio de sesión */
+.login-form {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.input-container {
+    margin: 15px 0;
+    text-align: left;
+}
+
+.input-container label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 2vmax;
+}
+
+.input-container input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 2vmax;
+}
+
+button {
+    background-color: #0C3C60;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 2vmax;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+button:hover {
+    background-color: #09505C;
+}
+.login-form a{
+    background-color: #0C3C60;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 2vmax;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.5s;
+}
+
+.login-form a:hover{
+    background-color: #09505C; 
+}
+
+/* Estilo del footer */
+.footer {
+    background-color: #0C3C60;
+    color: #fff;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-nav {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer-nav li {
+    margin-right: 20px;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+    font-size: 1.8vmax;
+    padding: 10px;
+}
+.footer-nav a:hover{
+    text-shadow:0px 0px 2px white;
+}
+.footer-container p{
+    font-size: 1.8vmax;
+}
+
+
+@media screen and (max-width: 349px) {
+
+h2{
+    box-shadow:0px 0px 2px #0C3C60 ;
+    padding:10px 0px ;
+}
+    .login-container {
+        height: 50vh;
+        padding: 20px;
+    }
+
+    .login-form {
+        width: 100%;
+    }
+
+    .input-container input {
+        font-size: 2vmax;
+    }
+
+    button {
+        font-size: 2vmax;
+    }
+
+    .footer-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+.footer-nav a{
+    border-bottom: 1px solid #ccc;
+}
+    .footer-nav li {
+        margin: 10px 0;
+    }
+    h2{
+        font-size: 2.5vmax;
+    }
+}   
+@media screen and (max-width: 295px) {
+    .login-container{
+        height: 70vh;
+    }
+.login-form button{
+margin-bottom: 10px;
+}
+.login-form label{
+    text-align: center;
+}
+.login-form input{
+    text-align: center;
+}
+.home{
+    width: 35px;
+    height: 35px;
+}
+}
+   @media screen and (max-width: 181px){
+        .header{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-left: 0px;
+            gap: 5px;
+        }
+        .header img{
+        width: 60px;
+        height: 60px;
+        }
+        .home{
+            margin:0px;
+        }
+        .login-container{
+            height: 70vh;
+        }
+   }
+   @media screen and (max-width :139px){
+    .footer-nav a{
+        border-bottom: none;
+    }
+      
+   }
